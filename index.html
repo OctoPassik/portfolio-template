@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portfolio — Developer</title>
+  <meta name="description" content="Personal developer portfolio showcasing projects and skills" />
+
+  <!-- Tailwind CSS (CDN) -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- Devicon (tech icons) -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.16.0/devicon.min.css" />
+
+  <!-- Inter font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+
+  <!-- Custom styles -->
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <!-- ========== NAVBAR ========== -->
+  <nav class="navbar">
+    <div class="nav-container">
+      <a href="#hero" class="nav-logo" id="nav-logo">Portfolio</a>
+      <ul class="nav-links" id="nav-links"></ul>
+      <div style="display:flex;align-items:center;gap:0.75rem;">
+        <button class="theme-toggle" id="theme-toggle" aria-label="Toggle theme">&#9790;</button>
+        <button class="nav-hamburger" aria-label="Toggle menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ========== HERO ========== -->
+  <section id="hero" class="hero">
+    <div class="hero-bg-glow hero-bg-glow--blue"></div>
+    <div class="hero-bg-glow hero-bg-glow--purple"></div>
+    <div class="section-container hero-content">
+      <div class="hero-text">
+        <p class="hero-greeting" id="hero-greeting"></p>
+        <h1 class="hero-name" id="hero-name"></h1>
+        <p class="hero-role">
+          <span id="typed-text"></span><span class="typed-cursor">|</span>
+        </p>
+        <p class="hero-description" id="hero-description"></p>
+        <div class="hero-buttons">
+          <a href="#projects" class="btn btn-primary" id="hero-cta">View My Work</a>
+          <a href="#contact" class="btn btn-secondary" id="hero-cta-secondary">Contact Me</a>
+        </div>
+      </div>
+      <div class="hero-avatar-wrapper">
+        <img class="hero-avatar" id="hero-avatar" src="" alt="Avatar" />
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== ABOUT ========== -->
+  <section id="about">
+    <div class="section-container fade-in">
+      <h2 class="section-title" id="about-title">About Me</h2>
+      <div class="about-grid">
+        <div>
+          <p class="about-text" id="about-description"></p>
+        </div>
+        <div class="skills-list" id="skills-list"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== TECH STACK ========== -->
+  <section id="tech">
+    <div class="section-container">
+      <h2 class="section-title fade-in">Tech Stack</h2>
+      <p class="section-subtitle fade-in">Technologies I work with</p>
+      <div class="tech-grid" id="tech-grid"></div>
+    </div>
+  </section>
+
+  <!-- ========== PROJECTS ========== -->
+  <section id="projects">
+    <div class="section-container">
+      <h2 class="section-title fade-in" id="projects-title">My Projects</h2>
+      <p class="section-subtitle fade-in" id="projects-description"></p>
+      <div class="projects-grid" id="projects-grid"></div>
+    </div>
+  </section>
+
+  <!-- ========== CONTACT ========== -->
+  <section id="contact">
+    <div class="section-container fade-in">
+      <h2 class="section-title" id="contact-title">Get In Touch</h2>
+      <p class="section-subtitle" id="contact-description"></p>
+      <div class="contact-wrapper">
+        <div class="contact-info">
+          <a href="#" class="contact-email-link" id="contact-email">&#9993; email@example.com</a>
+          <div class="contact-socials" id="contact-socials"></div>
+        </div>
+        <form class="contact-form" id="contact-form">
+          <div class="form-group">
+            <label for="form-name">Name</label>
+            <input type="text" id="form-name" placeholder="Your name" required />
+          </div>
+          <div class="form-group">
+            <label for="form-email">Email</label>
+            <input type="email" id="form-email" placeholder="you@example.com" required />
+          </div>
+          <div class="form-group">
+            <label for="form-message">Message</label>
+            <textarea id="form-message" placeholder="Your message..." required></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary" style="align-self:flex-start;">Send Message</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== FOOTER ========== -->
+  <footer class="site-footer">
+    <p id="footer-text"></p>
+  </footer>
+
+  <!-- Back to Top -->
+  <button class="back-to-top" id="back-to-top" aria-label="Back to top">&#8593;</button>
+
+  <!-- Scripts -->
+  <script src="js/config.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>

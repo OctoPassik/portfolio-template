@@ -1,12 +1,12 @@
 const CONFIG = {
   // Personal info
-  name: "Alex Developer",
-  role: "Full-Stack Developer",
-  avatarUrl: "https://api.dicebear.com/7.x/avataaars/svg?seed=Alex",
+  name: "Afiya Amber",
+  role: "Devops Enginner",
+  avatarUrl: "https://api.dicebear.com/7.x/avataaars/svg?seed=Afiya",
   resumeUrl: "#",
 
   // GitHub username for fetching repos
-  githubUsername: "OctoPassik",
+  githubUsername: "afiyamber21-sketch",
 
   // Hero section
   hero: {
